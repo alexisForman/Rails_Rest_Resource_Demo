@@ -1,0 +1,17 @@
+<%= form_with(model: @blog) do |form| %>
+
+<div>
+    <%= form.label "Title", style: "display: block" %>
+    <%= form.text_field :title %>
+</div>
+
+<div>
+    <%= form.label "Description", style: "display: block" %>
+    <%= form.text_field :description %>
+</div>
+
+<div>
+    <%= form.submit %>
+</div>
+
+<% end %>
